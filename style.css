@@ -76,8 +76,8 @@ body::after {
 }
 
 .profile-photo {
-  width: 130px;
-  height: 130px;
+  width: 180px;
+  height: 155px;
   object-fit: cover;
   object-position: center top;
   border-radius: 16px;
@@ -406,6 +406,9 @@ header {
 .sticker-5 img { width: 155px; height: 195px; }
 .sticker-6 img { width:  90px; height: 347px; }
 .sticker-9 img { width: 155px; height: 260px; }
+.sticker-1 img { width: 180px; height: 155px; object-fit: cover; }
+.sticker-2 img { width: 180px; height: 155px; object-fit: cover; }
+.sticker-7 img { width: 180px; height: 155px; object-fit: cover; }
 
 .sticker-label {
   display: block;
