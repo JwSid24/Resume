@@ -390,6 +390,7 @@ header {
   cursor: pointer;
   opacity: 0;
   animation: stickerPop 0.5s ease forwards;
+  z-index: 2;
 }
 
 .sticker img {
