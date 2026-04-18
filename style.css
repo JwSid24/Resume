@@ -382,6 +382,57 @@ header {
   color: var(--accent);
 }
 
+/* ── LANGUAGES ── */
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.lang-card {
+  background: var(--card);
+  border: 1px solid rgba(0, 65, 194, 0.1);
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 2px 12px rgba(0, 65, 194, 0.05);
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.lang-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 65, 194, 0.12);
+  border-color: var(--accent-border);
+}
+
+.lang-flag {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.lang-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.lang-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.lang-level {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 /* ── STICKERS ── */
 .sticker {
   position: absolute;
