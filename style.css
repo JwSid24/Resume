@@ -410,10 +410,10 @@ header {
 .sticker-5 img { width: 155px; height: 195px; object-fit: contain; }
 .sticker-6 img { width:  90px; height: 347px; object-fit: contain; }
 .sticker-9 img { width: 155px; height: 260px; object-fit: contain; }
-.sticker-1 img { width: 180px; height: 155px; object-fit: cover; }
-.sticker-2 img { width: 180px; height: 155px; object-fit: cover; }
-.sticker-7 img { width: 180px; height: 155px; object-fit: cover; }
-.sticker-8 img { width: 180px; height: 155px; object-fit: cover; }
+.sticker-1 img { width: 260px; height: 220px; object-fit: cover; }
+.sticker-2 img { width: 260px; height: 220px; object-fit: cover; }
+.sticker-7 img { width: 260px; height: 220px; object-fit: cover; }
+.sticker-8 img { width: 260px; height: 220px; object-fit: cover; }
 
 .sticker-label {
   display: block;
