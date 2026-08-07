@@ -86,7 +86,7 @@
              <div class="exp-role">Medlem af Eventudvalget</div>
             <div class="exp-company">Kurdiske Studerendes Forening – SDU</div>
             <div class="exp-meta">
-              <span>apr. 2026 – nu · 2 mdr.</span>
+              <span>apr. 2026 – nu · <span class="auto-duration" data-start="2026-04"></span></span>
               <span class="dot"></span>
               <span>Odense, Syddanmark</span>
               <span class="dot"></span>
@@ -102,7 +102,7 @@
             <div class="exp-role">Receptionist</div>
             <div class="exp-company">Comwell Hotels</div>
             <div class="exp-meta">
-              <span>jul. 2025 – nu · 11 mdr.</span>
+              <span>jul. 2025 – nu · <span class="auto-duration" data-start="2025-07"></span></span>
               <span class="dot"></span>
               <span>Odense, Syddanmark</span>
               <span class="dot"></span>
@@ -278,5 +278,22 @@
 
   </div><!-- end .page -->
 
+  <script>
+    function calcDuration(startYearMonth) {
+      const [startYear, startMonth] = startYearMonth.split('-').map(Number);
+      const now = new Date();
+      let months = (now.getFullYear() - startYear) * 12 + (now.getMonth() + 1 - startMonth);
+      if (months < 1) months = 1;
+      const years = Math.floor(months / 12);
+      const rem = months % 12;
+      if (years === 0) return rem + ' mdr.';
+      if (rem === 0) return years + ' år';
+      return years + ' år ' + rem + ' mdr.';
+    }
+
+    document.querySelectorAll('.auto-duration[data-start]').forEach(el => {
+      el.textContent = calcDuration(el.dataset.start);
+    });
+  </script>
 </body>
 </html>
