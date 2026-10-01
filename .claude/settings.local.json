@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '{ if \\(length\\($0\\) > 400\\) printf \"%d: [LONG LINE %d chars] %s ... %s\\\\n\", NR, length\\($0\\), substr\\($0,1,160\\), substr\\($0,length\\($0\\)-120\\); else printf \"%d: %s\\\\n\", NR, $0 }' index.html)",
+      "WebFetch(domain:www.sdu.dk)"
+    ]
+  }
+}
