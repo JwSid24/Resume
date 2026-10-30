@@ -272,6 +272,10 @@ img.tech-icon {
     filter: invert(17%) sepia(83%) saturate(1800%) hue-rotate(210deg) brightness(80%) contrast(110%);
 }
 
+img.tech-icon-colored {
+    filter: none;
+}
+
 /* ── ABOUT BOX ── */
 .about-box {
     background: var(--card);
