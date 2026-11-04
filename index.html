@@ -437,6 +437,27 @@
 
   </div><!-- end .page -->
 
+  <!-- PHOTO LIGHTBOX -->
+  <div class="lightbox" id="photo-lightbox" aria-hidden="true">
+    <img src="Jwan%20Sidou.jpg" alt="Jwan Sidou" />
+  </div>
+
+  <script>
+    const photo = document.querySelector('.profile-photo');
+    const lightbox = document.getElementById('photo-lightbox');
+
+    function setLightbox(open) {
+      lightbox.classList.toggle('open', open);
+      lightbox.setAttribute('aria-hidden', String(!open));
+    }
+
+    photo.addEventListener('click', () => setLightbox(true));
+    lightbox.addEventListener('click', () => setLightbox(false));
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') setLightbox(false);
+    });
+  </script>
+
   <script>
     document.querySelectorAll('.exp-card[data-expandable]').forEach(card => {
       card.addEventListener('click', () => {
